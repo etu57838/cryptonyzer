@@ -8,7 +8,7 @@ import pandas as pd
 
 # ---------- CONFIG ----------
 TELEGRAM_BOT_TOKEN = os.environ["8487551708:AAE4G5ioDGRq8G6ytbL_KgkjeoQqKuEYVvo"]
-openai.api_key = os.environ.get("OPENAI_API_KEY")
+openai.api_key = os.environ.get("OPENAI_API_KEY", "")
 YOUR_CHAT_ID = int(os.environ["8487551708"])
 AI_ENABLED = bool(OPENAI_API_KEY)
 SYMBOLS = ["SOL/USDT", "BTC/USDT", "ETH/USDT"]
